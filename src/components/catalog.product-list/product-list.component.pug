@@ -1,0 +1,7 @@
+include /components/catalog.product-list/product-list.data.pug
+
+.product-list
+  ul.product-list__list
+    each product in PRODUCT_LIST
+      li.product-list__item
+        +productItem(product)

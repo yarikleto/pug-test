@@ -1,0 +1,68 @@
+-
+  const WORDS = [
+    {
+      text: 'travel',
+      rating: 100,
+      href: '#'
+    },
+    {
+      text: 'webdev',
+      rating: 1500,
+      href: '#'
+    },
+    {
+      text: 'wiki',
+      rating: 1000,
+      href: '#'
+    },
+    {
+      text: 'video',
+      rating: 245,
+      href: '#'
+    },
+    {
+      text: 'ubuntu',
+      rating: 780,
+      href: '#'
+    },
+    {
+      text: 'work',
+      rating: 780,
+      href: '#'
+    },
+    {
+      text: 'tv',
+      rating: 4800,
+      href: '#'
+    },
+    {
+      text: 'wordpress',
+      rating: 115,
+      href: '#'
+    },
+    {
+      text: 'design',
+      rating: 933,
+      href: '#'
+    }
+  ];
+
+  const WORDS_RATINGS = WORDS.map(word => word.rating),
+    MAX_RATING = Math.max(...WORDS_RATINGS),
+    MIN_RATING = Math.min(...WORDS_RATINGS),
+    OPTIONS = {
+      min: 80,
+      max: 300
+    };
+
+  function normalizeRating(rating, options) {
+    /**
+    * Функция нормализует большие числа до нужного диапазона:
+    *
+    * @param {Number} rating Текущий рейтинг слова
+    * @param {Object} options Настройка нормализации (минимальное и максимальное нормализованное число)
+    * 
+    * @return {Number} Нормализованное число в нужном диапазое
+    */
+    return options.min + (rating - MIN_RATING) * (options.max - options.min) / (MAX_RATING - MIN_RATING);
+  }

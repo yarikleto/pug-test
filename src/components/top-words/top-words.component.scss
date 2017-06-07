@@ -1,0 +1,18 @@
+.top-words {
+  word-wrap: break-word;
+  font-size: 16px;
+}
+
+.top-words__word {
+  display: inline-block;
+  color: #000;
+  margin-right: 8px;
+  text-decoration: none;
+  vertical-align: middle;
+  transition: all .2s;
+  line-height: 0.8em;
+}
+
+.top-words__word:hover {
+  transform: scale(1.1);
+}

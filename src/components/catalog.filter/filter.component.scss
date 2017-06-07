@@ -1,0 +1,120 @@
+$primary-color: #666666;
+
+.filter {
+  background-color: #eeeeee;
+  padding: 20px 15px;
+}
+
+.filter__checkbox {
+  display: none;
+}
+
+.filter__checkbox-label {
+  position: relative;
+  padding-left: 25px;
+  font-size: 14px;
+  color: $primary-color;
+  margin-right: 15px;
+}
+
+.filter__checkbox-label:before {
+  content: '';
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border: 2px solid $primary-color;
+  background: transparent;
+  cursor: pointer;
+}
+
+.filter__check {
+  display: none;
+  position: absolute;
+  bottom: 1px;
+  left: 1px;
+  width: 18px;
+  height: 18px;
+  fill: $primary-color;
+  cursor: pointer;
+}
+
+.filter__checkbox:checked+label .filter__check {
+  display: block;
+}
+
+.filter__range {
+  -webkit-appearance: none;
+  width: 95px;
+  height: 1px;
+  background-color: $primary-color;
+  vertical-align: middle;
+  margin-right: 25px;
+  margin-left: 10px;
+}
+
+.filter__range:focus {
+  outline: none;
+}
+
+.filter__range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: $primary-color;
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.filter__select-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.filter__select-button {
+  position: absolute;
+  width: 20px;
+  height: 22px;
+  background: #dddddd;
+  border-left: 1px solid #000;
+  right: 1px;
+  top: 1px;
+}
+
+.filter__select-button:before {
+  content: '';
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: #000; 
+}
+
+.filter__select {
+  border: 1px solid black;
+  font-size: 14px;
+  padding: 2px 5px;
+  cursor: pointer;
+}
+
+.filter__select:focus {
+  outline: none;
+}
+
+
+.filter__submit {
+  background: #2b78e4;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  transition: all .2s;
+  cursor: pointer;
+}
+
+.filter__submit:hover {
+  transform: scale(1.1);
+}

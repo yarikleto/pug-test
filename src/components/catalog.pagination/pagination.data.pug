@@ -1,0 +1,20 @@
+mixin pagination(startPage, amountPages, currentPage, base)
+  - startPage = startPage || 1
+  - amountPages =  amountPages || 10
+  - currentPage = currentPage || 1
+  - base = base || '#'
+
+  - if(currentPage === 1)
+      a.pagination__prev-all.pagination__link--disabled(href="#") <<
+      a.pagination__prev.pagination__link--disabled(href="#") <
+  - else
+      a.pagination__prev-all(href="#") <<
+      a.pagination__prev(href="#") <
+  - for (let i = startPage; i < amountPages + startPage; i++) {
+    - if(i === currentPage)
+        a.pagination__link.pagination__link--disabled(href=`${base}${i}`)= i
+    - else
+      a.pagination__link(href=`${base}${i}`)= i
+  - }
+  a.pagination__next(href="#") >
+  a.pagination__next-all(href="#") >>

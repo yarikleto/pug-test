@@ -1,0 +1,18 @@
+include /components/catalog.filter/filter.data.pug
+
+.filter
+  form.filter__form
+    input#checkbox1.filter__checkbox(type='checkbox' value='checkbox1')
+    label.filter__checkbox-label(for='checkbox1') Checkbox1
+      +checkIcon
+    input#checkbox2.filter__checkbox(type='checkbox' value='checkbox2')
+    label.filter__checkbox-label(for='checkbox2') Checkbox2
+      +checkIcon
+    input.filter__range(type='range')
+    .filter__select-wrapper
+      .filter__select-button
+      select.filter__select
+        option Combobox
+        option Combobox 2
+        option Combobo 3
+    button.filter__submit Search

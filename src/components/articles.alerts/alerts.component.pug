@@ -1,0 +1,8 @@
+include /components/articles.alerts/alerts.data.pug
+
+//- TEMPLATE
+.alerts
+  each alert in ALERTS
+    .alert(data-alert-type= alert.type)
+      .alert__text= alert.text
+      .alert__close x

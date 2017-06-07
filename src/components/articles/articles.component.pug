@@ -1,0 +1,9 @@
+include /components/articles/articles.data.pug
+
+//- TEMPLATE
+.articles
+  include /components/articles.alerts/alerts.component.pug
+  ul.articles__list
+    each articleOptions in ARTICLES_LIST
+      li.articles__item
+        +article(articleOptions)

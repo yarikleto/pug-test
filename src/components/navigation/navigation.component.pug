@@ -1,0 +1,8 @@
+include /components/navigation/navigation.data.pug
+
+//- TEMPLATE
+.navigation
+  ul.navigation__list
+    each link in NAV_LINKS
+      li.navigation__item
+        a(href= link.url class=`${NAV_LINK_CLASS} ${link.class}`)= link.value

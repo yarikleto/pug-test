@@ -1,0 +1,27 @@
+.pagination {
+  padding-bottom: 20px;
+}
+.pagination__prev-all,
+.pagination__prev {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.pagination__next,
+.pagination__next-all {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.pagination__link {
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.pagination__link--disabled {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  color: #000;
+}

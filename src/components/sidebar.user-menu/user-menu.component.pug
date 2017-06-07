@@ -1,0 +1,12 @@
+include /components/sidebar.user-menu/user-menu.data.pug
+
+//- TEMPLATE
+.user-menu
+  ul.user-menu__list
+    each link in USER_MENU_LINKS
+      li.user-menu__item
+        +getUserMenuIcon(link.type, USER_MENU_ICON_CLASS)
+        a(class=`${USER_MENU_LINK_CLASS} ${USER_MENU_LINK_CLASS}-${link.type}` href=link.url)= link.value
+        
+
+

@@ -1,0 +1,38 @@
+.user-menu__list {
+  list-style: none;
+  padding-left: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.user-menu__item {
+  position: relative;
+}
+
+.user-menu__item:hover {
+  text-decoration: underline;
+}
+
+.user-menu__item:hover .user-menu__icon {
+  width: 22px;
+}
+
+.user-menu__link {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+}
+
+.user-menu__icon {
+  position: absolute;
+  width: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  transition: all .3s;
+}

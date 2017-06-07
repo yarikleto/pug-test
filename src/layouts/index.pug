@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title Главная
+    meta(charset='utf-8')
+    link(href='./index.css' rel='stylesheet')
+    body
+    .container
+      .sidebar__wrapper
+        include /components/sidebar/sidebar.component.pug
+      .content
+        include /components/navigation/navigation.component.pug
+        main.content__main
+          include /components/articles/articles.component.pug
+        .content__right
+          include /components/top-words/top-words.component.pug
+
+
+
+

@@ -1,0 +1,7 @@
+include /components/top-words/top-words.data.pug
+
+//- TEMPLATE
+.top-words
+  each word in WORDS
+    a.top-words__word(href=word.href style=`font-size: ${ normalizeRating(word.rating, OPTIONS) }%`)= word.text
+

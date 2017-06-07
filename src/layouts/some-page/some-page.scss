@@ -1,0 +1,44 @@
+// Приведение стандартных стилей браузеров к единому виду
+@import 'src/shared/scss/_normalize.scss';
+// Подключение глобальных стилей
+@import 'src/shared/scss/_global.scss';
+
+// Подключение стилей компонентов
+@import 'src/components/sidebar.user-avatar/user-avatar.component.scss';
+@import 'src/components/sidebar.user-menu/user-menu.component.scss';
+@import 'src/components/sidebar.profile-menu/profile-menu.component.scss';
+@import 'src/components/catalog.filter/filter.component.scss';
+@import 'src/components/catalog.product-list/product-list.component.scss';
+@import 'src/components/navigation/navigation.component.scss';
+
+@import 'src/components/catalog.pagination/pagination.component.scss';
+@import 'src/components/top-words/top-words.component.scss';
+
+.sidebar__wrapper {
+  float: left;
+  width: 155px;
+}
+
+.content {
+  float: right;
+  width: 765px;
+}
+
+.content::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.content__main {
+  width: 595px;
+  float: left;
+  padding-top: 10px;
+}
+
+.content__right {
+  width: 170px;
+  float: right;
+  padding-top: 25px;
+  padding-left: 15px;
+}

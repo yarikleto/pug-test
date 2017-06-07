@@ -1,0 +1,10 @@
+include /components/sidebar.profile-menu/profile-menu.data.pug
+
+//- TEMPLATE
+.profile-menu
+  .profile-menu__title Profile
+  ul.profile-menu__list
+    each link in PROFILE_LINKS
+      li.profile-menu__item
+        +getProfileIcon(link.type, PROFILE_ICON_CLASS)
+        a(class=`${PROFILE_LINK_CLASS} ${PROFILE_LINK_CLASS}-${link.type}` href=link.url)= link.value

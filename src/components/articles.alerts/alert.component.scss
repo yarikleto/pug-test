@@ -1,0 +1,35 @@
+.alert {
+  position: relative;
+  padding-left: 15px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-bottom: 5px;
+}
+
+.alert[data-alert-type='warning'] {
+  background-color: #9fc5f8;
+}
+.alert[data-alert-type='error'] {
+  background-color: #E74C3C;
+}
+
+.alert__text {
+  color: #fff;
+}
+.alert__close {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 17px;
+  width: 10px;
+  height: 26px;
+  color: #000;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.alert__close:hover {
+  font-size: 23px;
+}

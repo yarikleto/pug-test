@@ -1,0 +1,51 @@
+$primary-color: #999999;
+$secondary-color: #dddddd;
+
+.profile-menu__title {
+  text-transform: uppercase;
+  color: $primary-color;
+  font-size: 13px;
+  border-bottom: 1px solid $secondary-color;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.profile-menu__list {
+  list-style: none;
+  padding-left: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.profile-menu__item {
+  position: relative;
+}
+
+.profile-menu__item:hover {
+  text-decoration: underline;
+}
+
+.profile-menu__item:hover .profile-menu__icon {
+  width: 22px;
+}
+
+.profile-menu__link {
+  display: block;
+  text-decoration: none;
+  color: $primary-color;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+}
+
+.profile-menu__icon {
+  position: absolute;
+  width: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  transition: all .3s;
+  fill: $primary-color;
+}
