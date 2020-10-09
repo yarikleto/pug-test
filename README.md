@@ -8,6 +8,6 @@ npm start # запуск проекта
 - scss
 - gulp
 
-[Первая страница](http://alfimois.github.io/pug-test/dist/index.html)
+[Первая страница](http://yarikleto.github.io/pug-test/dist/index.html)
 |
-[Вторая страница](http://alfimois.github.io/pug-test/dist/some-page/some-page.html)
+[Вторая страница](http://yarikleto.github.io/pug-test/dist/some-page/some-page.html)
