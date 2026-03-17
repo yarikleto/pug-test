@@ -1,9 +1,9 @@
-// Приведение стандартных стилей браузеров к единому виду
+// Normalize default browser styles
 @import 'src/shared/scss/_normalize.scss';
-// Подключение глобальных стилей
+// Include global styles
 @import 'src/shared/scss/_global.scss';
 
-// Подключение стилей компонентов
+// Include component styles
 @import 'src/components/sidebar.user-avatar/user-avatar.component.scss';
 @import 'src/components/sidebar.user-menu/user-menu.component.scss';
 @import 'src/components/sidebar.profile-menu/profile-menu.component.scss';

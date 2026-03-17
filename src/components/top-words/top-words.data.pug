@@ -57,12 +57,12 @@
 
   function normalizeRating(rating, options) {
     /**
-    * Функция нормализует большие числа до нужного диапазона:
+    * Normalizes large numbers to a desired range:
     *
-    * @param {Number} rating Текущий рейтинг слова
-    * @param {Object} options Настройка нормализации (минимальное и максимальное нормализованное число)
-    * 
-    * @return {Number} Нормализованное число в нужном диапазое
+    * @param {Number} rating Current word rating
+    * @param {Object} options Normalization settings (minimum and maximum normalized number)
+    *
+    * @return {Number} Normalized number within the desired range
     */
     return options.min + (rating - MIN_RATING) * (options.max - options.min) / (MAX_RATING - MIN_RATING);
   }

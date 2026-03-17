@@ -1,13 +1,13 @@
 # pug-test
 ```bash
-npm i # установка зависимостей
-npm start # запуск проекта
+npm i # install dependencies
+npm start # start the project
 ```
 
 - pug
 - scss
 - gulp
 
-[Первая страница](http://yarikleto.github.io/pug-test/dist/index.html)
+[First page](http://yarikleto.github.io/pug-test/dist/index.html)
 |
-[Вторая страница](http://yarikleto.github.io/pug-test/dist/some-page/some-page.html)
+[Second page](http://yarikleto.github.io/pug-test/dist/some-page/some-page.html)
